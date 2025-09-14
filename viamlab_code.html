@@ -74,6 +74,20 @@
       text-decoration: none; /* Bỏ gạch chân của link */
       font-weight: bold; /* Làm đậm chữ */
     }
+    .youtube-box {
+      background-color: #f1f1f1; /* Màu xanh đậm */
+      padding: 10px 15px; /* Kích thước box */
+      display: inline-block; /* Quan trọng: giúp box bọc vừa nội dung */
+      border-radius: 5px; /* Bo tròn góc */
+      text-decoration: none; /* Bỏ gạch chân của link */
+      
+      transition: background-color 0.36s ease; /* Thêm dòng này để tạo hiệu ứng mượt */
+    }
+    .youtube-box:hover {
+      background-color: #c4c4c4; /* Màu xanh đậm hơn khi di chuột qua */
+      font-weight: bold; /* Làm đậm chữ */
+      cursor: pointer; /* Biểu tượng con trỏ thay đổi thành ngón tay trỏ */
+    }
 /*
  *    Tương thích mọi loại màn hình
  */
@@ -210,12 +224,12 @@
 <body>
   <div class="container">
    <div class="sidebar">
-
+    <div class="youtube-box">
      <a class="remove_underline" href="https://www.youtube.com/@VIAMLAB/featured" target="_blank">
       <i class="fab fa-youtube" style="font-size:20px; color:red;"></i>
      </a>         
      <a class="remove_underline" style="color: blue; font-size: 18px;" href="https://www.youtube.com/@VIAMLAB/featured">[:en]VIAM LAB PROJECTS[:vi]DỰ ÁN VIAM LAB[:]</a><br>
-
+    </div>
 <h3>A. ROBOTICS</h3>
 
 <button id="m1" class="menu-button">[:en]UNMANNED SURFACE VEHICLE (USV)[:vi]PHƯƠNG TIỆN MẶT NƯỚC KHÔNG NGƯỜI LÁI (USV)[:]</button>
@@ -279,13 +293,11 @@
                     <li>[:en]Can be weaponized and used for various purposes in the military.[:vi]Có thể vũ trang hóa và sử dụng cho nhiều mục đích trong quân sự.[:]</li>
                     <li>[:en]In addition, USV can be combined with AUV, ROV and UAV to form an automatic system for multiple purposes both in the air and water.[:vi]Ngoài ra, USV có thể kết hợp với AUV, ROV và UAV để tạo thành một hệ thống tự động phục vụ nhiều mục đích cả trên không và dưới nước.[:]</li>
                 </ul>
-
+                <p><br>[:en]Watch video:[:vi]Xem video:[:]</p>
+                <iframe width="768" height="432" src="https://youtube.com/embed/J7D-GmNX5Js" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
                 <a class="current-research-box" style="color: white; font-size: 25px;" href="http://viamlab.com/usv/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe6kUGhVVJSCbtfCwZVqGT7wgybVjBLCsOmQ&s" alt="" width="25" height="25px" >
                     [:en]Current research[:vi]Nghiên cứu hiện tại[:]
                 </a>
-
-                <p><br>[:en]Watch video:[:vi]Xem video:[:]</p>
-                <iframe width="768" height="432" src="https://youtube.com/embed/J7D-GmNX5Js" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
         </div>
 
         <!-- Nội dung tạm ẩn tương ứng với m2 → m17 -->
